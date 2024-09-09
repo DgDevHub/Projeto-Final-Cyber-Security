@@ -1,0 +1,14 @@
+*{
+    background-color: #1f1f42;
+}
+.Topo{
+    width: 82rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+.Topo img {
+    width: 5rem;
+    width: 5rem;
+    max-width: 100%; 
+    height: auto;    
+}
