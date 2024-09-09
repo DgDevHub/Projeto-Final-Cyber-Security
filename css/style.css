@@ -5,10 +5,18 @@
     width: 82rem;
     margin-left: 1rem;
     margin-top: 1rem;
+    background-color: red;
 }
 .Topo img {
     width: 5rem;
-    width: 5rem;
     max-width: 100%; 
     height: auto;    
+}
+
+.quizbox {
+    width: 40rem;
+    height: 30rem;
+    background-color: aqua;
+    border-radius: 20px;
+
 }
