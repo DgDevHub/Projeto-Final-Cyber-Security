@@ -2,10 +2,10 @@
     background-color: #1f1f42;
 }
 .Topo{
-    width: 82rem;
+    width: 6rem;
     margin-left: 1rem;
     margin-top: 1rem;
-    background-color: red;
+    /* background-color: red; */
 }
 .Topo img {
     width: 5rem;
@@ -14,9 +14,31 @@
 }
 
 .quizbox {
-    width: 40rem;
-    height: 30rem;
-    background-color: aqua;
-    border-radius: 20px;
+    position: relative;
+    margin-left: 1rem;
+    top: 8rem;
+    width: 25rem;
+    height: 25rem;
+    /* background-color: aqua; */
+    border-radius: 20rem;
 
+}
+.quizbox h2{
+    position: relative;
+    left: 3rem;
+    color: aliceblue;
+}
+.quizbox p{
+    position: relative;
+    top: -1rem;
+    margin-left: 4.5rem;
+    right: 4rem;
+    color: aliceblue;
+}
+.quizbox button{
+    position: relative;
+    top: 1rem;
+    margin-left: 2rem;
+    left: 6rem;
+    color: aliceblue;
 }
