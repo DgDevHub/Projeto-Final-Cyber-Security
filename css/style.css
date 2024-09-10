@@ -1,6 +1,16 @@
+
+
 *{
     background-color: #1f1f42;
 }
+
+:root{
+    /*adicionar variaveis de cor, pra facilitar na troca de paleta*/
+    --cor-principal: #1f1f42;
+    --cor-secundaria: aqua;
+    --cor-texto: white;
+}
+
 .Topo{
     width: 6rem;
     margin-left: 1rem;
@@ -41,4 +51,21 @@
     margin-left: 2rem;
     left: 6rem;
     color: aliceblue;
+    background-color: transparent;
+    border: 1px solid aqua;
+    text-transform: uppercase;
+    padding: 10px 0;
+    width: 10rem;
+    font-weight: 500;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 0.3px;
+    transform: skew(-10deg);
+    
+}
+
+.quizbox button:hover{
+    transition: color 0.3s;
+    color:#050801;
+    border-color: #050801;
 }
