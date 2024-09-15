@@ -1,7 +1,11 @@
 body{
     overflow-y: hidden;
     overflow-x: hidden;
+    
 }
+
+
+
 #video-background {
     position: absolute;
     top: 0;
@@ -241,3 +245,5 @@ body{
         width: 6rem;
     }
 }
+
+
