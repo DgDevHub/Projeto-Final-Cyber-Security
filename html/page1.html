@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,19 +21,16 @@
     <main>
         <div class="container">
             <div class="questions-container hide">
-                <span class="question">Pergunta aqui</span>
-                <div class="answers-container">
-                    <button class="answer button">Resposta 1</button>
-                    <button class="answer button">Resposta 2</button>
-                    <button class="answer button">Resposta 3</button>
-                    <button class="answer button">Resposta 4</button>
+                <span id="Pergunta">Pergunta aqui</span>
+                <div id="containerRespostas">
+                    <button id="resposta0" class="resposta botao">Resposta 1</button>
+                    <button id="resposta1" class="resposta botao">Resposta 2</button>
+                    <button id="resposta2" class="resposta botao">Resposta 3</button>
+                    <button id="resposta3" class="resposta botao">Resposta 4</button>
                 </div>
+                <div id="mensagem" class="mensagem hide"></div> <!-- Mensagem para erros e sucesso -->
             </div>
-
-            <div class="controls-container">
-                <button class="next-question button">Próxima Pergunta</button>
-            </div>
-        </div>
-    </main>
+        </main>
+<script src="../js/scripit.js"></script>
 </body>
 </html>

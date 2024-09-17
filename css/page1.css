@@ -39,8 +39,8 @@ body {
 
 .Coruja {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 60px;
+    text-align: center;
 }
 
 .Coruja img {
@@ -70,13 +70,13 @@ body {
     gap: 24px;
 }
 
-.question {
+#Pergunta {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
 }
 
-.answers-container {
+#containerRespostas {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -87,11 +87,11 @@ body {
     cursor: not-allowed;
 }
 
-.next-question {
+/* .next-question {
     margin-top: 32px;
-}
+} */
 
-.button {
+button {
     background-color: #4863f7;
     color: #fff;
     font-size: 16px;
@@ -103,6 +103,23 @@ body {
     transition: filter 0.1s;
 }
 
-.button:not(:disabled):hover {
+button:not(:disabled):hover {
     filter: brightness(0.8);
+}
+.mensagem {
+    font-size: 18px;
+    font-weight: bold;
+    color: #e74c3c; /* Cor vermelha para erro */
+    text-align: center;
+}
+
+.mensagem.hide {
+    display: none; /* Esconder mensagem quando necessário */
+}
+.mensagem.erro {
+    color: #e74c3c; /* Cor vermelha para erro */
+}
+
+.mensagem.acerto {
+    color: #7fdbff; /* Cor azul claro para acerto */
 }

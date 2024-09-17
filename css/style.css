@@ -104,11 +104,19 @@ body{
     letter-spacing: 0.01875rem;
     transform: skew(-10deg);
 }
-
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.quizbox a:hover {
+    transition: color 0.3s;
+    color: #17d5e3;
+    border-color: #17d5e3;
+}
 .quizbox button:hover {
     transition: color 0.3s;
-    color: #050801;
-    border-color: #050801;
+    color: #17d5e3;
+    border-color: #ffffff;
 }
 
 @media (max-width: 100%) {
