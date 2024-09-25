@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('resposta2'),
         document.getElementById('resposta3')
     ];
-
+    const nome = sessionStorage.getItem("nomeUser")
     const mensagem = document.getElementById('mensagem');
 
     function carregarPergunta() {
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             } else {
                 mostrarMensagemSucesso();
             }
-        }, 2000); 
+        }, 1000); 
     }
 
     function mostrarMensagemErro() {
@@ -61,17 +61,18 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             perguntaAtual = 0;
             carregarPergunta();
-        }, 2000); 
+        }, 1000); 
     }
 
     function mostrarMensagemSucesso() {
-        mensagem.textContent = "Parabéns! Você completou o quiz.";
+        mensagem.textContent = "Parabéns " + nome+"! Você completou o quiz.";
         mensagem.classList.remove('hide');
         mensagem.classList.remove('erro');
         mensagem.classList.add('acerto');
         setTimeout(() => {
-            window.location.href= "../html/index.html"; 
-        }, 2000); 
+            sessionStorage.removeItem("nomeUser")
+            window.location.href= "../html/home.html"; 
+        }, 3000); 
     }
 
     carregarPergunta();

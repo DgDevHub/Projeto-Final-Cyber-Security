@@ -1,10 +1,7 @@
 body{
     overflow-y: hidden;
-    overflow-x: hidden;
-    
+    overflow-x: hidden; 
 }
-
-
 
 #video-background {
     position: absolute;
@@ -46,7 +43,17 @@ body{
     --cor-secundaria: aqua;
     --cor-texto: white;
 }
-
+#nomeUser{
+    position: relative;
+    top: -5.5rem;
+    left: 8rem;
+    width: 19rem;
+    height: 2rem;
+    font-family: 'Mont';
+}
+#start{
+    visibility: hidden;
+}
 .Topo {
     width: 6rem;
     margin-left: 1rem;
@@ -62,9 +69,10 @@ body{
 
 .quizbox {
     position: relative;
-    margin-left: 1rem;
-    top: -4rem;
-    width: 30rem;
+    margin-left: 0rem;
+    right: 3rem;
+    top: -5rem;
+    width: 38rem;
     height: auto;
 }
 
@@ -76,7 +84,6 @@ body{
     color: aliceblue;
     margin-left: 0rem;
 }
-
 .quizbox p {
     font-family: 'Mont';
     position: relative;
@@ -84,19 +91,34 @@ body{
     margin-left: 4.5rem;
     left: 0.5rem;
     color: aliceblue;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
-
-.quizbox button {
+#verificarnome{
     position: relative;
-    top: -3rem;
-    margin-left: 2rem;
-    left: 3.5rem;
+    font-family: 'Mont';
+    width: 7rem;
+    height: 1.5rem;
+    border: 0.0625rem solid aqua;
+    background-color: transparent;
+    color: aliceblue;
+    top: -12.50rem;
+    left: 25.5rem;
+}
+#botoes-container{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.8rem;
+}
+#botoes-container button {
+    position: relative;
+    top: -10rem;
+    left: 12rem;
+    margin-right: 2rem;
     color: aliceblue;
     background-color: transparent;
     border: 0.0625rem solid aqua;
     text-transform: uppercase;
-    padding: 0.625rem 0;
+    padding: 0.70rem 0;
     width: 10rem;
     font-weight: 500;
     border-radius: 0.1875rem;
@@ -113,7 +135,7 @@ a{
     color: #17d5e3;
     border-color: #17d5e3;
 }
-.quizbox button:hover {
+#botoes-container button:hover {
     transition: color 0.3s;
     color: #17d5e3;
     border-color: #ffffff;
@@ -134,7 +156,7 @@ a{
     align-items: center;
     width: 45vw;
     height: 8vw;
-    background-color: rgba(31, 31, 66, 0.2);
+    background-color: rgba(31, 31, 66, 0.2);;
     margin: 5px;
     margin-left: auto;
     padding: 10px;
@@ -153,185 +175,18 @@ a{
     display: flex;
 }
 
-.text-content{
+.square .text-content{
     display: flex;
+    color: #ffffff;
     flex-direction: column;
     justify-content: center;
 }
-.text-content p{
+.square .text-content p{
     margin: 0;
     font-size: 0.8em;
     word-wrap: break-word;
 }
-.text-content h3{
+.square .text-content h3{
     margin: 5px;
     font-size: 1.2em;
-    color: white;
 }
-
-@media (max-width: 600px){
-    .container {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        top: auto;
-        bottom: 0;
-        left: 50%;
-        right: 50;
-        transform: translateX(-50%);
-        gap: 5px;
-    }
-    .square {
-        width: 80vw;
-        height: 15vw;
-    }
-    .square img{
-        width: 15vw;
-        height: auto;
-        max-height: 100%;
-    }
-    .text-content p{
-        font-size: 0.5em;
-    }
-    .text-content h3{
-        font-size: 1.2em;
-    }
-}
-
-
-@media (max-width: 100%) {
-    .Topo {
-        width: 4rem;
-        margin-left: 0.5rem;
-        margin-top: 0.5rem;
-    }
-
-    .Topo img {
-        width: 3rem;
-    }
-
-    .quizbox {
-        width: 20rem;
-        height: 20rem;
-        top: 6rem;
-    }
-
-    .quizbox h2 {
-        left: 2rem;
-    }
-
-    .quizbox p {
-        margin-left: 3rem;
-        right: 3rem;
-        top: -0.5rem;
-    }
-
-    .quizbox button {
-        margin-left: 1rem;
-        left: 4rem;
-        width: 8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .Topo {
-        width: 3rem;
-        margin-left: 0.25rem;
-        margin-top: 0.25rem;
-    }
-
-    .Topo img {
-        width: 2rem;
-    }
-
-    .quizbox {
-        width: 15rem;
-        height: 15rem;
-        top: 4rem;
-    }
-
-    .quizbox h2 {
-        left: 1rem;
-        margin-left: 1.5rem;
-    }
-
-    .quizbox p {
-        margin-left: 2rem;
-        right: 2rem;
-        top: -0.25rem;
-    }
-
-    .quizbox button {
-        margin-left: 2rem;
-        left: 3rem;
-        width: 6rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .Topo {
-        width: 4rem;
-        margin-left: 0.5rem;
-        margin-top: 0.5rem;
-    }
-
-    .Topo img {
-        width: 3rem;
-    }
-
-    .quizbox {
-        width: 20rem;
-        top: -2rem;
-    }
-
-    .quizbox h2 {
-        font-size: 4.5rem;
-        left: 2rem;
-    }
-
-    .quizbox p {
-        margin-left: 3rem;
-        top: -3rem;
-    }
-
-    .quizbox button {
-        margin-left: 1rem;
-        left: 1rem;
-        width: 8rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .Topo {
-        width: 3rem;
-        margin-left: 0.25rem;
-        margin-top: 0.25rem;
-    }
-
-    .Topo img {
-        width: 2.5rem;
-    }
-
-    .quizbox {
-        width: 15rem;
-        top: -1rem;
-    }
-
-    .quizbox h2 {
-        font-size: 3rem;
-        left: 1rem;
-    }
-
-    .quizbox p {
-        margin-left: 2rem;
-        top: -2rem;
-    }
-
-    .quizbox button {
-        margin-left: 0.5rem;
-        left: 1rem;
-        width: 6rem;
-    }
-}
-
-

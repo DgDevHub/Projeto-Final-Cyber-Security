@@ -21,11 +21,17 @@
     <main>
         <div class="quizbox">
                 <h2> CYBER SECURITY</h2>
-                <p> Este quiz é mais do que apenas diversão – é uma ferramenta essencial para a conscientização sobre segurança online. Criado com carinho pelo Squad 1, ele visa educar e proteger você contra ameaças cibernéticas, ajudando a identificar e evitar golpes. <br>
+                <p> Este quiz é mais do que apenas diversão  é uma ferramenta essencial para a conscientização sobre segurança online. Criado com carinho pelo Squad 1, ele visa educar e proteger você contra ameaças cibernéticas, ajudando a identificar e evitar golpes. <br>
                      Ao participar, você não só se diverte, mas também aprende práticas importantes para manter sua segurança na internet. A conscientização é a chave para se proteger, e nosso objetivo é equipá-lo com o conhecimento necessário para navegar com mais confiança.
                     </p>
-            <button data-name="quiz"><a href="../html/page1.html">Jogar</a></button>
-            <button onclick="showSquares()" data-name="nos"> Sobre nós</button>
+                    <input type="text" id="nomeUser" placeholder="Digite seu nome para começar">
+                </div>
+                <button id="verificarnome">Verificar</button>
+                <div id="botoes-container">
+                    <button data-name="quiz" id="start"><a href="../html/page1.html">Jogar</a></button>
+                    <button onclick="showSquares()" data-name="nos"> Sobre nós</button>
+                </div>
+            <aside>
             <div class="container" id="squareContainer">
                 <div class="square" data-name="Diego">
                     <img src="" alt="">
@@ -66,17 +72,13 @@
                 </div>
             </div>
         </div>
-
+        </aside>
     </main>
 
     <footer>
 
     </footer>
 
-    <script>
-    function showSquares() {
-            document.getElementById('squareContainer').classList.toggle('show');
-        }
-    </script>
+<script src="../js/home.js"></script>
 </body>
 </html>
