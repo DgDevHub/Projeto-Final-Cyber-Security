@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const perguntas = [
         { pergunta: "Pergunta 1", respostas: ["a", "b", "c", "d"], correta: 1 },
-        { pergunta: "Pergunta 2", respostas: ["a", "b", "c", "d"], correta: 1 },
+        { pergunta: "Qual das seguintes práticas é a mais eficaz para proteger senhas?", respostas: [" Usar a mesma senha para todas as contas", "Ativar a autenticação de dois fatores", "Compartilhar senhas apenas com amigos confiáveis", "Anotar senhas em um caderno"], correta: 1 },
         { pergunta: "Pergunta 3", respostas: ["a", "b", "c", "d"], correta: 1 },
         { pergunta: "Pergunta 4", respostas: ["a", "b", "c", "d"], correta: 1 },
         { pergunta: "Pergunta 5", respostas: ["a", "b", "c", "d"], correta: 1 }
