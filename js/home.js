@@ -13,7 +13,7 @@ function verificarCampo(){
     if(nomeInput.value.trim() !== "" && nomeInput.value.length >= 3  ){
         sessionStorage.setItem("nomeUser", nomeInput.value)
         startBotao.style.visibility = "visible"
-    }else if(!isNaN(nomeInput.value)){
+    }else if(isNaN(nomeInput.value)){
         alert("Digite seu nome corretamente")
         nomeInput.value = ""
     }else{
