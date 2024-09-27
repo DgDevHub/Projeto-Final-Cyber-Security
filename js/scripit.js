@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const perguntas = [
-        { pergunta: "Pergunta 1", respostas: ["a", "b", "c", "d"], correta: 1 },
+        { pergunta: "Qual dos seguintes sinais é mais indicativo de um possível golpe em uma comunicação por e-mail ou mensagem?", respostas: ["O remetente possui um endereço de e-mail corporativo oficial", "O e-mail contém erros de gramática e ortografia.", "A mensagem oferece um prêmio de uma promoção que você nunca participou.", "O e-mail solicita a verificação de identidade através de um link suspeito"], correta: 3 },
         { pergunta: "Qual das seguintes práticas é a mais eficaz para proteger senhas?", respostas: [" Usar a mesma senha para todas as contas", "Ativar a autenticação de dois fatores", "Compartilhar senhas apenas com amigos confiáveis", "Anotar senhas em um caderno"], correta: 1 },
         { pergunta: "Pergunta 3", respostas: ["a", "b", "c", "d"], correta: 1 },
         { pergunta: "Pergunta 4", respostas: ["a", "b", "c", "d"], correta: 1 },
@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
     const nome = sessionStorage.getItem("nomeUser")
     const mensagem = document.getElementById('mensagem');
+    let p = 0;
 
     function carregarPergunta() {
         const pergunta = perguntas[perguntaAtual];
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mensagem.classList.add('acerto');
         setTimeout(() => {
             perguntaAtual++;
+            p++
             if (perguntaAtual < perguntas.length) {
                 carregarPergunta();
             } else {
@@ -65,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function mostrarMensagemSucesso() {
-        mensagem.textContent = "Parabéns " + nome+"! Você completou o quiz.";
+        mensagem.textContent = "Parabéns " + nome+"! Você completou o quiz com a pontuação de " + p +"!";
         mensagem.classList.remove('hide');
         mensagem.classList.remove('erro');
         mensagem.classList.add('acerto');
