@@ -103,13 +103,18 @@ body{
     color: aliceblue;
     top: -12.50rem;
     left: 25.5rem;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 0.01875rem;
+    transform: skew(-10deg);
+    text-transform: uppercase;
+    
 }
 #botoes-container{
     display: flex;
     flex-direction: column-reverse;
     gap: 0.8rem;
 }
-#botoes-container button {
+#botoes-container button{
     position: relative;
     top: -10rem;
     left: 12rem;
@@ -136,6 +141,12 @@ a{
     border-color: #17d5e3;
 }
 #botoes-container button:hover {
+    transition: color 0.3s;
+    color: #17d5e3;
+    border-color: #ffffff;
+}
+
+#verificarnome:hover {
     transition: color 0.3s;
     color: #17d5e3;
     border-color: #ffffff;

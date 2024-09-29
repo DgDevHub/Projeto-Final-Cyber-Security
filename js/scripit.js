@@ -2,9 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const perguntas = [
         { pergunta: "Qual dos seguintes sinais é mais indicativo de um possível golpe em uma comunicação por e-mail ou mensagem?", respostas: ["O remetente possui um endereço de e-mail corporativo oficial", "O e-mail contém erros de gramática e ortografia.", "A mensagem oferece um prêmio de uma promoção que você nunca participou.", "O e-mail solicita a verificação de identidade através de um link suspeito"], correta: 3 },
         { pergunta: "Qual das seguintes práticas é a mais eficaz para proteger senhas?", respostas: [" Usar a mesma senha para todas as contas", "Ativar a autenticação de dois fatores", "Compartilhar senhas apenas com amigos confiáveis", "Anotar senhas em um caderno"], correta: 1 },
-        { pergunta: "Pergunta 3", respostas: ["a", "b", "c", "d"], correta: 1 },
-        { pergunta: "Pergunta 4", respostas: ["a", "b", "c", "d"], correta: 1 },
-        { pergunta: "Pergunta 5", respostas: ["a", "b", "c", "d"], correta: 1 }
+        { pergunta: "O que não faz parte dos quatro pilares da segurança da informação?", respostas: ["Eficiência", "Confidencialidade", "Integridade", "Autencidade"], correta: 0 },
+        { pergunta: "Qual a principal função de um firewall?", respostas: ["Proteger contra virus", "Fazer backup de dados", "Bloquear acessos não autorizados à rede", "Melhorar a velocidade da internet"], correta: 2 },
+        { pergunta: "Qual a melhor prática ao usar redes Wi-fi públicas?", respostas: ["Usar VPN para proteger a conexão", "Acessar contas bancárias", "Compartilhar informações pessoais", "Desativar o firewall"], correta: 0 }
     ];
 
     let perguntaAtual = 0;
@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href= "../html/home.html"; 
         }, 3000); 
     }
+
 
     carregarPergunta();
 });
