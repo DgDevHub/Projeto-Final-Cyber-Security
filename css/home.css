@@ -39,9 +39,11 @@ body{
     src: url(../font/Montserrat-Bold.ttf) format(truetype);
 }
 :root {
-    --cor-principal: #1f1f42;
-    --cor-secundaria: aqua;
+    --cor-principal: #00332c; 
+    --cor-secundaria: #3ab7a5;
+    --cor-terciaria: #141412;
     --cor-texto: white;
+    
 }
 #nomeUser{
     position: relative;
@@ -81,7 +83,7 @@ body{
     font-size: 7rem;
     position: relative;
     left: 5rem;
-    color: aliceblue;
+    color: var(--cor-texto);
     margin-left: 0rem;
 }
 .quizbox p {
@@ -90,7 +92,7 @@ body{
     top: -5.5rem;
     margin-left: 4.5rem;
     left: 0.5rem;
-    color: aliceblue;
+    color: var(--cor-texto);
     margin-bottom: 1rem;
 }
 #verificarnome{
@@ -98,9 +100,9 @@ body{
     font-family: 'Mont';
     width: 7rem;
     height: 1.5rem;
-    border: 0.0625rem solid aqua;
+    border: 0.0625rem solid var(--cor-secundaria);
     background-color: transparent;
-    color: aliceblue;
+    color: var(--cor-texto);
     top: -12.50rem;
     left: 25.5rem;
     transition: 0.3s ease-in-out;
@@ -119,9 +121,9 @@ body{
     top: -10rem;
     left: 12rem;
     margin-right: 2rem;
-    color: aliceblue;
+    color: var(--cor-texto);
     background-color: transparent;
-    border: 0.0625rem solid aqua;
+    border: 0.0625rem solid var(--cor-secundaria);
     text-transform: uppercase;
     padding: 0.70rem 0;
     width: 10rem;
@@ -133,23 +135,23 @@ body{
 }
 a{
     text-decoration: none;
-    color: aliceblue;
+    color: var(--cor-texto);
 }
 .quizbox a:hover {
     transition: color 0.3s;
-    color: #17d5e3;
-    border-color: #17d5e3;
+    color: var(--cor-secundaria);
+    border-color: var(--cor-secundaria);
 }
 #botoes-container button:hover {
     transition: color 0.3s;
-    color: #17d5e3;
-    border-color: #ffffff;
+    color: var(--cor-secundaria);
+    border-color: var(--cor-texto);
 }
 
 #verificarnome:hover {
     transition: color 0.3s;
-    color: #17d5e3;
-    border-color: #ffffff;
+    color: var(--cor-secundaria);
+    border-color: var(--cor-texto);
 }
 
 .container {
@@ -188,7 +190,7 @@ a{
 
 .square .text-content{
     display: flex;
-    color: #ffffff;
+    color: var(--cor-texto);
     flex-direction: column;
     justify-content: center;
 }
