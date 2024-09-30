@@ -156,8 +156,8 @@ a{
 
 .container {
     position: fixed;
-    top: 2%;
-    right: 10%;
+    top: 12%;
+    right: 6%;
     transform: translateY(50%, -50%);
     display: none;
     flex-direction: column;

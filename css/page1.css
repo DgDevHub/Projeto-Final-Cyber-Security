@@ -44,7 +44,7 @@ body {
 }
 
 .Coruja img {
-    width: 5rem; /* Tamanho da imagem ajustável */
+    width: 5rem; 
     height: auto;
 }
 
@@ -88,10 +88,6 @@ body {
     cursor: not-allowed;
 }
 
-/* .next-question {
-    margin-top: 32px;
-} */
-
 button {
     background-color: #4863f7;
     color: #fff;
@@ -110,17 +106,17 @@ button:not(:disabled):hover {
 .mensagem {
     font-size: 18px;
     font-weight: bold;
-    color: #e74c3c; /* Cor vermelha para erro */
+    color: #e74c3c; 
     text-align: center;
 }
 
 .mensagem.hide {
-    display: none; /* Esconder mensagem quando necessário */
+    display: none; 
 }
 .mensagem.erro {
-    color: #e74c3c; /* Cor vermelha para erro */
+    color: #e74c3c; 
 }
 
 .mensagem.acerto {
-    color: #7fdbff; /* Cor azul claro para acerto */
+    color: #7fdbff; 
 }

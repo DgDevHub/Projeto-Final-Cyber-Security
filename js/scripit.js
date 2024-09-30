@@ -1,11 +1,57 @@
 document.addEventListener('DOMContentLoaded', () => {
     const perguntas = [
-        { pergunta: "Qual dos seguintes sinais é mais indicativo de um possível golpe em uma comunicação por e-mail ou mensagem?", respostas: ["O remetente possui um endereço de e-mail corporativo oficial", "O e-mail contém erros de gramática e ortografia.", "A mensagem oferece um prêmio de uma promoção que você nunca participou.", "O e-mail solicita a verificação de identidade através de um link suspeito"], correta: 3 },
-        { pergunta: "Qual das seguintes práticas é a mais eficaz para proteger senhas?", respostas: [" Usar a mesma senha para todas as contas", "Ativar a autenticação de dois fatores", "Compartilhar senhas apenas com amigos confiáveis", "Anotar senhas em um caderno"], correta: 1 },
-        { pergunta: "O que não faz parte dos quatro pilares da segurança da informação?", respostas: ["Eficiência", "Confidencialidade", "Integridade", "Autencidade"], correta: 0 },
-        { pergunta: "Qual a principal função de um firewall?", respostas: ["Proteger contra virus", "Fazer backup de dados", "Bloquear acessos não autorizados à rede", "Melhorar a velocidade da internet"], correta: 2 },
-        { pergunta: "Qual a melhor prática ao usar redes Wi-fi públicas?", respostas: ["Usar VPN para proteger a conexão", "Acessar contas bancárias", "Compartilhar informações pessoais", "Desativar o firewall"], correta: 0 }
+        { 
+            pergunta: "Qual dos sinais abaixo indica que uma mensagem de WhatsApp ou e-mail pode ser um golpe?", 
+            respostas: [
+                "Mensagem de um conhecido pedindo ajuda financeira urgente", 
+                "E-mail de uma loja pedindo para confirmar uma compra que você não fez", 
+                "Mensagem de um banco pedindo para atualizar sua senha através de um link", 
+                "Todas as opções"
+            ], 
+            correta: 3 
+        },
+        { 
+            pergunta: "Qual a prática mais segura ao receber uma ligação pedindo informações bancárias?", 
+            respostas: [
+                "Fornecer os dados apenas se a pessoa disser que é do banco", 
+                "Desligar e ligar diretamente para o banco para confirmar", 
+                "Confirmar os dados por mensagem se o banco pedir", 
+                "Passar apenas informações que você considera não sensíveis"
+            ], 
+            correta: 1 
+        },
+        { 
+            pergunta: "Qual dos comportamentos abaixo é mais seguro para evitar cair em golpes online?", 
+            respostas: [
+                "Clique em links de promoções de lojas desconhecidas para verificar ofertas", 
+                "Use senhas simples para lembrar facilmente", 
+                "Desconfie de ofertas muito vantajosas e verifique a origem", 
+                "Acredite em mensagens de bancos solicitando dados pessoais por SMS"
+            ], 
+            correta: 2 
+        },
+        { 
+            pergunta: "O que você deve fazer ao receber uma mensagem de alguém dizendo ser seu parente pedindo dinheiro com urgência?", 
+            respostas: [
+                "Transferir o dinheiro imediatamente para ajudar", 
+                "Pedir mais detalhes por mensagem", 
+                "Ligar para o parente diretamente para confirmar", 
+                "Responde com os dados do seu banco"
+            ], 
+            correta: 2 
+        },
+        { 
+            pergunta: "Qual a melhor maneira de se proteger ao usar Wi-Fi público, como em um café?", 
+            respostas: [
+                "Acessar suas contas bancárias apenas se a rede parecer segura", 
+                "Não acessar contas pessoais ou de bancos em Wi-Fi público sem proteção", 
+                "Usar sempre a mesma senha em todas as contas para facilitar o acesso", 
+                "Confiar que a rede Wi-Fi pública do local é segura"
+            ], 
+            correta: 1 
+        }
     ];
+    
 
     let perguntaAtual = 0;
     const Pergunta = document.getElementById("Pergunta");
