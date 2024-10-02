@@ -121,6 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
             sessionStorage.removeItem("nomeUser")
             window.location.href= "../html/home.html"; 
         }, 3000); 
+        p = 0
     }
 
 
