@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mensagem.classList.add('acerto');
         setTimeout(() => {
             sessionStorage.removeItem("nomeUser")
-            window.location.href= "../html/index.html"; 
+            window.location.href= "../html/home.html"; 
         }, 3000); 
         p = 0
     }
