@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mensagem.classList.add('erro');
         setTimeout(() => {
             perguntaAtual = 0;
+            p = 0
             carregarPergunta();
         }, 1000); 
     }
